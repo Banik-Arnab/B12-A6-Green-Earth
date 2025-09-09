@@ -7,6 +7,9 @@
   <title>Green Earth</title>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -68,7 +71,37 @@
     </div>
   </section>
 
+<!--Choose Your Trees-->
+ <section class="bg-green-50 py-10">
+  <div class="container mx-auto px-4 flex flex-col lg:flex-row justify-center gap-6">
+    
+   
+    <div class="w-full lg:w-3/4 flex flex-col md:flex-row gap-6">
 
+      <div class="w-full md:w-1/4">
+        <h2 class="font-bold text-lg mb-4 text-gray-800">Categories</h2>
+        <ul id="category-container" class="space-y-2 text-black">
+     
+        </ul>
+      </div>
+      <div id="plant-container" class="w-full md:w-3/4 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
+
+      </div>
+    </div>
+
+    <!-- Cart -->
+    <div class="bg-white p-3 rounded-xl w-full lg:w-1/4">
+      <h1 class="font-bold">Your Cart</h1>
+      <div id="cart-items" class="mt-4 space-y-2">
+ 
+      </div>
+     <div class="flex justify-between items-center">
+         <h3 class="font-bold mt-3">Total: </h3>
+         <span id="cart-total"><i class="fa-solid fa-bangladeshi-taka-sign"></i>0</span>
+      </div>
+    </div>
+
+  </div>
 
   <section class="bg-white py-16 px-6">
 
@@ -155,6 +188,7 @@
   <footer class="bg-green-900 text-white text-center py-6">
     <p class="text-sm">© 2015 Green Earth. All Rights Reserved.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
